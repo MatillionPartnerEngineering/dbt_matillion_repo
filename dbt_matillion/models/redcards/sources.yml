@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: redcards_structured
+    database: analytics
+    schema: premier_red_cards
+    tables:
+      - name: redcards_structured
