@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: redcards_structured
-    database: dev_db
-    schema: partnersuccess
+    database: "{{ env_var('target_database') }}"
+    schema: "{{ env_var('target_schema') }}"
     tables:
       - name: redcards_structured
