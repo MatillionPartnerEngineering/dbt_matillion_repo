@@ -6,3 +6,11 @@ sources:
     schema: "{{ env_var('target_schema') }}"
     tables:
       - name: redcards_structured
+        loaded_at_field: LASTUPDATED
+        freshness:
+          warn_after:
+            count: 1
+            period: day
+          error_after:
+            count: 5
+            period: day
