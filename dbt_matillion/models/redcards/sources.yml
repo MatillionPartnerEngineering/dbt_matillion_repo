@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: redcards_structured
-    database: dev_db
-    schema: karey
-    tables:
-      - name: redcards_structured
