@@ -43,5 +43,5 @@ models:
     example:
       materialized: view
     redcards:
-      schema: postdbt #formerly  "{{ env_var('target_schema') }}"
+      schema: "{{ env_var('target_schema') }}" #formerly postdbt
       materialized: view
