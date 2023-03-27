@@ -2,11 +2,10 @@
 
 {{
     config(
-        target_database='analytics',
-        target_schema= "{{ env_var('target_schema') }}" ,
-        strategy='check',
-        unique_key='FIRSTNAME',
-        check_cols=['FIRSTNAME', 'LASTNAME','YELLOW', 'RED']
+        target_schema='snapshots',
+        unique_key='firstname',
+        strategy='timestamp',
+        updated_at='lastupdated',
     )
 }}
 
