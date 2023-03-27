@@ -2,10 +2,11 @@
 
 {{
     config(
+        target_database='analytics',
         target_schema= "{{ env_var('target_schema') }}" ,
         strategy='check',
         unique_key='FIRSTNAME',
-        check_cols=['FIRSTNAME', 'LASTNAME','YELLOW', 'RED'],
+        check_cols=['FIRSTNAME', 'LASTNAME','YELLOW', 'RED']
     )
 }}
 
