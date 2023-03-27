@@ -1,13 +1,13 @@
 {% snapshot redcards_snapshot_check %}
 
-    {{
-        config(
-          target_schema= "{{ env_var('target_schema') }}" ,
-          strategy='check',
-          unique_key='FIRSTNAME',
-          check_cols=['FIRSTNAME', 'LASTNAME','YELLOW', 'RED'],
-        )
-    }}
+{{
+    config(
+        target_schema= "{{ env_var('target_schema') }}" ,
+        strategy='check',
+        unique_key='FIRSTNAME',
+        check_cols=['FIRSTNAME', 'LASTNAME','YELLOW', 'RED'],
+    )
+}}
 
 SELECT
   *
