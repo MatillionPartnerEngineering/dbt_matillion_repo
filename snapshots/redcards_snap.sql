@@ -2,7 +2,7 @@
 
     {{
         config(
-          target_schema= "{{ env_var('target_schema') }}" ,
+          target_schema= "PUBLIC",
           strategy='check',
           unique_key='FIRSTNAME',
           check_cols=['FIRSTNAME', 'LASTNAME','YELLOW', 'RED'],
