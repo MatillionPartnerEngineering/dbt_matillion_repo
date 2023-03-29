@@ -18,17 +18,17 @@ models:
   - name: yellow_agg
     description: "Takes a count of the number of yellow cards which have been levied, grouped by team"
 
-metrics:
-  - name: count_by_team
-    label: Count by Team
-    description: "Takes a count of the number of yellow cards which have been levied, grouped by team"
-    model: ref('redcards_structured')
+#metrics:
+#  - name: count_by_team
+#    label: Count by Team
+#    description: "Takes a count of the number of yellow cards which have been levied, grouped by team"
+#    model: ref('redcards_structured')
 
-    calculation_method: count
-    sql: YELLOW
+#    calculation_method: count
+#    sql: YELLOW
 
-    timestamp: LASTUPDATED
-    time_grains: [day, week, month, quarter, year, all_time]
+#    timestamp: LASTUPDATED
+#    time_grains: [day, week, month, quarter, year, all_time]
 
-    dimensions:
-      - TEAMNAME
+#    dimensions:
+#      - TEAMNAME
