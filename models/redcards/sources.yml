@@ -1,12 +1,12 @@
 version: 2
 
 sources:
-  - name: redcards_structured
+  - name: redcards_source
     database: "{{ env_var('target_database') }}"
     schema: "{{ env_var('target_schema') }}"
     tables:
-      - name: redcards_structured
-        loaded_at_field: LASTUPDATED
+      - name: stg_SPRING_PREMIERCARDS
+        loaded_at_field: TIMESTAMP
         freshness:
           warn_after:
             count: 1
