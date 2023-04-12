@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: redcards_structured
+  - name: DBTMODEL_PREMIERCARDS
     description: "Test on dupes of the primary key"
     columns:
       - name: firstname

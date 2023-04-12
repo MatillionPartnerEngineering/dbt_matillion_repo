@@ -5,7 +5,7 @@ sources:
     database: "{{ env_var('target_database') }}"
     schema: "{{ env_var('target_schema') }}"
     tables:
-      - name: stg_SPRING_PREMIERCARDS
+      - name: STG_SPRING_PREMIERCARDS
         loaded_at_field: TIMESTAMP
         freshness:
           warn_after:
