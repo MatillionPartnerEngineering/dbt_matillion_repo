@@ -5,13 +5,11 @@ models:
   - name: DBTMODEL_PREMIERCARDS
     description: "Test on dupes of the primary key"
     columns:
-      - name: firstname
+      - name: FULLNAME
         description: "The first name of each player"
         tests:
           - unique
           - not_null
-      - name: lastname
-        description: "The last name of each player"
-        tests:
-          - unique
-          - not_null
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "sumcards > 0"
