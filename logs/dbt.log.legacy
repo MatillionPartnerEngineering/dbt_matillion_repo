@@ -1,0 +1,17 @@
+2023-04-25 21:23:27.655772 (MainThread): Running with dbt=1.4.6
+2023-04-25 21:23:27.704108 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2023-04-25 21:23:27.717240 (MainThread): Tracking: tracking
+2023-04-25 21:23:27.719360 (MainThread): 21:23:27  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9420450d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94204506a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94204c07c0>]}
+2023-04-25 21:23:27.719753 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=32
+2023-04-25 21:23:27.720351 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2023-04-25 21:23:27.720793 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2023-04-25 21:23:27.819300 (Thread-12): 21:23:27  checksum: 0049c9ca814b191acba678e7b1a0d7a85eeac3e13700309cfc1ce1a2c78d3886, vars: {}, profile: user, target: None, version: 1.4.6
+2023-04-25 21:23:27.837563 (Thread-12): 21:23:27  Unable to do partial parsing because of a version mismatch
+2023-04-25 21:23:27.837913 (Thread-12): 21:23:27  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2017285b-d95d-4e58-88d7-ca3599a00537', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9420502580>]}
+2023-04-25 21:23:28.483549 (Thread-12): 21:23:28  1699: static parser successfully parsed redcards/redcards_structured.sql
+2023-04-25 21:23:28.540691 (Thread-13): handling status request
+2023-04-25 21:23:28.541177 (Thread-13): 21:23:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2017285b-d95d-4e58-88d7-ca3599a00537', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f941dc47340>]}
+2023-04-25 21:23:28.541886 (Thread-13): sending response (<Response 1760 bytes [200 OK]>) to 10.0.15.109
+2023-04-25 21:23:50.369130 (Thread-14): handling status request
+2023-04-25 21:23:50.370433 (Thread-14): 21:23:50  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2017285b-d95d-4e58-88d7-ca3599a00537', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f941dc28eb0>]}
+2023-04-25 21:23:50.370906 (Thread-14): sending response (<Response 1760 bytes [200 OK]>) to 10.0.15.109
