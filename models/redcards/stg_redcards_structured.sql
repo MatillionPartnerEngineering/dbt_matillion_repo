@@ -1,5 +1,4 @@
 SELECT
   *,
-  (yellow + red) sumcards,
-  'dbt tests' status
+  (yellow + red) sumcards
 FROM {{source('redcards_structured','redcards_structured')}}
