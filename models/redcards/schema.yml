@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: redcards_structured
+  - name: stg_redcards_structured
     description: "Test on dupes of the primary key"
     columns:
       - name: nationality
