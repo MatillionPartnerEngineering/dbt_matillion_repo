@@ -5,18 +5,14 @@ models:
   - name: redcards_structured
     description: "Test on dupes of the primary key"
     columns:
-      - name: firstname
+      - name: nationality
         description: "The first name of each player"
         tests:
-          - unique
           - not_null
-      - name: lastname
+      - name: playername
         description: "The last name of each player"
         tests:
-<<<<<<< HEAD
           - unique
-          - not_null
-=======
           - not_null
       - name: yellow
         description: "Number of yellow cards amassed by each player"
@@ -33,5 +29,3 @@ models:
         tests:
 #          - dbt_expectations.expect_column_to_exist
           - not_null          
-
->>>>>>> 44dc3c9d27d36647529975ad02e2c93c6ebb8f3e
