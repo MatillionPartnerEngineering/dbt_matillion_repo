@@ -5,7 +5,7 @@ sources:
     database: "{{ env_var('target_database') }}"
     schema: "{{ env_var('target_schema') }}"
     tables:
-      - name: REDCARDS_STRUCTURED
+      - name: redcards_structured
         loaded_at_field: LASTUPDATED
         freshness:
           warn_after:
